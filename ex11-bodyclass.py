@@ -17,3 +17,7 @@ async def update_user(user_id, user: User, level: int = Body(..., gt=2)):
 def update_db(user_id, level, user):
     print(f"User id: {user_id}")
     print(f"Level: {level}")
+
+# async def update_user(user_id, user: User = Body(..., embed=True)): # Try deleting embed parameter
+#     update_db(user_id, level, user)
+#     return user
